@@ -40,7 +40,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 .hero { min-height: min(700px, 69vw); height: 610px; max-height: 760px; position: relative; display: flex; align-items: center; overflow: hidden; background: #394539; color: white; }
 .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(25,36,30,.67) 0%, rgba(25,36,30,.42) 40%, rgba(25,36,30,.04) 100%), linear-gradient(0deg, rgba(22,31,25,.3), transparent 25%); }
-.hero-image { position: absolute; inset: 0; background-image: url("https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=2200&q=90"); background-position: center 52%; background-size: cover; transform: scale(1.015); }
+.hero-image { position: absolute; inset: 0; background-image: url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Eilean_Donan_at_Dusk.jpg/1920px-Eilean_Donan_at_Dusk.jpg"); background-position: center 52%; background-size: cover; transform: scale(1.015); }
 .hero-content { position: relative; z-index: 1; width: min(1180px, calc(100% - 96px)); margin: 0 auto; padding-bottom: 24px; }
 .eyebrow { margin: 0 0 24px; display: flex; align-items: center; gap: 10px; color: #7c806f; font-size: 9px; font-weight: 600; letter-spacing: .17em; }
 .eyebrow > span { display: inline-block; width: 19px; height: 1px; background: var(--clay); }
@@ -68,6 +68,7 @@ h1 em, h2 em, blockquote em { color: #d1a282; font-weight: 400; }
 .text-link:hover { color: var(--clay); border-color: var(--clay); }
 .image-frame { position: relative; height: 290px; margin-top: 12px; overflow: hidden; }
 .welcome-image img { object-position: center; }
+.demo-image-label { position: absolute; z-index: 2; top: 12px; left: 12px; padding: 10px 12px; background: rgba(30,43,34,.88); color: white; font-size: 10px; font-weight: 500; letter-spacing: .1em; line-height: 1.4; text-transform: uppercase; }
 .image-note { position: absolute; right: 0; bottom: 0; padding: 11px 14px; background: var(--paper); color: var(--muted); font: italic 11px var(--serif); }
 
 .stay-section { padding: 100px 0 110px; background: #eeece4; }
@@ -138,7 +139,7 @@ h1 em, h2 em, blockquote em { color: #d1a282; font-weight: 400; }
 .booking-disclaimer { margin: 6px 0 0; color: #898b81; font-size: 8px; line-height: 1.6; }
 
 .residency-section { min-height: 565px; display: grid; grid-template-columns: 1fr 1fr; background: var(--forest); color: white; }
-.residency-image { min-height: 565px; overflow: hidden; }
+.residency-image { position: relative; min-height: 565px; overflow: hidden; }
 .residency-image img { object-position: center; }
 .residency-content { position: relative; padding: 96px clamp(48px, 9vw, 140px) 82px clamp(50px, 8vw, 110px); align-self: center; }
 .residency-content h2, .visit-content h2 { font-size: clamp(48px, 5vw, 65px); }
@@ -184,7 +185,7 @@ blockquote em { color: #748172; }
 .prototype-note { margin: 2px 0 0; color: #929387; font-size: 9px; }
 
 .visit-section { min-height: 470px; display: grid; grid-template-columns: 1fr 1fr; background: var(--forest-dark); color: white; }
-.visit-image { min-height: 470px; }
+.visit-image { position: relative; min-height: 470px; }
 .visit-image img { object-position: center 58%; }
 .visit-content { position: relative; align-self: center; padding: 68px clamp(40px, 8vw, 110px); }
 .visit-content h2 { font-size: clamp(48px, 5vw, 64px); }
@@ -195,6 +196,11 @@ blockquote em { color: #748172; }
 .site-footer { padding: 44px 6.2% 18px; background: var(--paper); }
 .footer-brand .brand-mark { width: 34px; height: 34px; }
 .site-footer > p { margin: 18px 0 33px 45px; color: #818477; font: italic 12px var(--serif); }
+.image-credits { margin: 0 0 18px 45px; color: var(--muted); font-size: 9px; }
+.image-credits summary { color: var(--forest); cursor: pointer; }
+.image-credits ul { padding-left: 18px; }
+.image-credits li { margin: 6px 0; line-height: 1.6; }
+.image-credits a { text-decoration: underline; text-underline-offset: 2px; }
 .footer-bottom { min-height: 37px; padding-top: 15px; display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); color: #85877d; font-size: 8px; letter-spacing: .04em; }
 .footer-bottom a { color: var(--forest); }
 
